@@ -88,9 +88,7 @@ public class ModuleExample extends Module {
         this.susBlocks.clear();
         BlockPos playerPos = this.mc.player.blockPosition();
 
-        int rad = this.useRenderDistance.get()
-            ? this.mc.options.viewDistance().get() * 16
-            : this.customRadius.get();
+        int rad = this.customRadius.get();
 
         for (int x = -rad; x <= rad; x++) {
             for (int y = -rad; y <= rad; y++) {
