@@ -17,7 +17,7 @@ import net.minecraft.world.phys.AABB;
 
 import java.util.*;
 
-public class SusBlockFinder extends Module {
+public class ModuleExample extends Module {
     private final SettingGroup sgGeneral = this.settings.getDefaultGroup();
     private final SettingGroup sgRender = this.settings.createGroup("Render");
 
@@ -89,7 +89,7 @@ public class SusBlockFinder extends Module {
         BlockPos playerPos = this.mc.player.blockPosition();
 
         int rad = this.useRenderDistance.get()
-            ? this.mc.options.getClampedViewDistance() * 16
+            ? this.mc.options.getRenderDistance().getValue() * 16
             : this.customRadius.get();
 
         for (int x = -rad; x <= rad; x++) {
