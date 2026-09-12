@@ -63,7 +63,7 @@ public class ModuleExample extends Module {
     private final Set<BlockPos> alertedPillars = new HashSet<>();
     private final List<Block> targetFive = new ArrayList<>();
 
-    public SusBlockFinder() {
+    public ModuleExample() {
         super(AddonTemplate.CATEGORY, "sus-block-finder", "Detects suspicious natural block patterns and vertical stacks.");
     }
 
