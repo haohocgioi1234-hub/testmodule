@@ -3,11 +3,11 @@ mod-version = "0.1.0"
 
 # Fabric (https://fabricmc.net/develop)
 jdk = "21"
-minecraft = "1.21.11"
+minecraft = "1.21.1"
 fabric-loader = "0.16.5"
 
 # Loom (https://github.com/FabricMC/fabric-loom)
-loom = "1.18-SNAPSHOT"
+loom = "1.17-SNAPSHOT"
 
 # Meteor (https://github.com/MeteorDevelopment/meteor-client/)
 meteor = "0.5.8"
